@@ -42,7 +42,7 @@ app.fullSensitivewords.wordsDfa('我爱毛主席和周总理'); // => ['毛主�
 // 替换敏感词，当once=true时，对于每一个出现的敏感词，只替换一次。默认 once = false
 app.fullSensitivewords.replaceDfa('我是管理员', '*', true); // => 我是*
 // 替换敏感词, 当once=false时，对于每一个出现的敏感词，按照其长度替换。默认 once = false
-app.fullSensitivewords.replaceDfa('我是管理员', '*', true); // => 我是***
+app.fullSensitivewords.replaceDfa('我是管理员', '*', false); // => 我是***
 ```
 
 ## License
