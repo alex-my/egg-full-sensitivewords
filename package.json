@@ -1,6 +1,6 @@
 {
   "name": "egg-full-sensitivewords",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "egg插件，敏感词判断，过滤，使用DFA, DAT算法供选择",
   "eggPlugin": {
     "name": "fullSensitivewords"
