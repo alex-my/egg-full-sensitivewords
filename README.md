@@ -2,6 +2,14 @@
 
 `egg`插件，提供敏感词检测，替换功能。使用`DFA`算法，性能优秀
 
+如果是超大的敏感词库，例如 1W 以上，如果对初始化词库时长敏感，可以使用以下方法查看初始化所消耗的时间
+
+```js
+console.time('spend time');
+app.fullSensitivewords.addWord('管理员');
+console.timeEnd('spend time');
+```
+
 ## 安装
 
 ```bash
