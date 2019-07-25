@@ -28,9 +28,11 @@ exports.fullSensitivewords = {
 
 ## 示例
 
-- 可以通过`app.fullSensitivewords`来调用
-- 测试示例见 [test/test-dfa.js](./test/test-dfa.js)
-- 所有接口的示例如下:
+可以通过`app.fullSensitivewords`来调用
+
+测试示例见 [test/test-dfa.js](./test/test-dfa.js)
+
+所有接口的示例如下:
 
 ```js
 // 初始化敏感词库，建议在启动的时候执行
