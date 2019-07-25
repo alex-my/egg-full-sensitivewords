@@ -1,9 +1,6 @@
 ## 说明
 
-- `egg`插件，提供敏感词检测，替换功能
-- 使用以下算法
-  - `DFA` 性能优秀
-  - `DAT` (待实现)，针对小文本过滤，比如用户名
+`egg`插件，提供敏感词检测，替换功能。使用`DFA`算法，性能优秀
 
 ## 安装
 
@@ -24,7 +21,7 @@ exports.fullSensitivewords = {
 ## 示例
 
 - 可以通过`app.fullSensitivewords`来调用
-- 测试示例见 [test-dfa](./test/test-dfa.js)
+- 测试示例见 [test/test-dfa.js](./test/test-dfa.js)
 - 所有接口的示例如下:
 
 ```js
