@@ -1,6 +1,6 @@
 {
   "name": "egg-full-sensitivewords",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "egg插件，敏感词判断，过滤，使用DFA, DAT算法供选择",
   "eggPlugin": {
     "name": "fullSensitivewords"
@@ -15,12 +15,12 @@
   "devDependencies": {
     "autod": "^3.1.0",
     "autod-egg": "^1.1.0",
-    "egg": "^2.22.2",
-    "egg-bin": "^4.13.0",
-    "egg-ci": "^1.12.0",
-    "egg-mock": "^3.23.1",
-    "eslint": "^6.0.1",
-    "eslint-config-egg": "^7.4.1",
+    "egg": "^2.27.0",
+    "egg-bin": "^4.15.0",
+    "egg-ci": "^1.15.0",
+    "egg-mock": "^4.0.0",
+    "eslint": "^7.5.0",
+    "eslint-config-egg": "^8.0.1",
     "webstorm-disable-index": "^1.2.0"
   },
   "engines": {
@@ -36,6 +36,7 @@
     "autod": "autod"
   },
   "files": [
+    "config",
     "app.js",
     "lib"
   ],

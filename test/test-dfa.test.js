@@ -3,13 +3,13 @@
 const SensitiveWords = require('../lib/sensitive-words');
 
 const sw = new SensitiveWords();
-sw.addWords(['天安门', '毛主席', '周总理']);
+sw.addWords([ '天安门', '毛主席', '周总理' ]);
 sw.addWord('管理员');
 console.log(`words: ${JSON.stringify(sw.dfaMap.words)}`);
 
 // 输出:
 // JSON 格式化工具: https://www.keylala.cn
-// words: 
+// words:
 // {
 //     "天": {
 //       "isEnd": 0,
@@ -50,13 +50,13 @@ console.log(`words: ${JSON.stringify(sw.dfaMap.words)}`);
 //   }
 
 
-const checkWords = ['我爱北京天安门', '主席毛泽东同志', '我爱毛主席和周总理'];
+const checkWords = [ '我爱北京天安门', '主席毛泽东同志', '我爱毛主席和周总理' ];
 checkWords.forEach((value, index) => {
-    console.log('--------------------------------');
-    console.log(`value: ${value}, index: ${index}`);
-    console.log(`containsDfa: ${sw.containsDfa(value)}`);
-    console.log(`wordsDfa: ${JSON.stringify(sw.wordsDfa(value))}`);
-})
+  console.log('--------------------------------');
+  console.log(`value: ${value}, index: ${index}`);
+  console.log(`containsDfa: ${sw.containsDfa(value)}`);
+  console.log(`wordsDfa: ${JSON.stringify(sw.wordsDfa(value))}`);
+});
 
 // 输出:
 // --------------------------------
@@ -72,12 +72,12 @@ checkWords.forEach((value, index) => {
 // containsDfa: true
 // wordsDfa: ["毛主席","周总理"]
 
-const replaceWords = ['我是管理员'];
+const replaceWords = [ '我是管理员' ];
 replaceWords.forEach((value, index) => {
-    console.log('--------------------------------');
-    console.log(`value: ${value}, index: ${index}`);
-    console.log(`replaceDfa once=true: ${sw.replaceDfa(value, '*', true)}`);
-    console.log(`replaceDfa once=false: ${sw.replaceDfa(value, '*', false)}`);
+  console.log('--------------------------------');
+  console.log(`value: ${value}, index: ${index}`);
+  console.log(`replaceDfa once=true: ${sw.replaceDfa(value, '*', true)}`);
+  console.log(`replaceDfa once=false: ${sw.replaceDfa(value, '*', false)}`);
 });
 
 // 输出:
